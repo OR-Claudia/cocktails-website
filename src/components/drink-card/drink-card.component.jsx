@@ -1,8 +1,7 @@
 import "./drink-card.styles.css";
 
 const DrinkCard = ({ cocktail }) => {
-	const { strDrink, strDrinkThumb, strInstructions } = cocktail;
-	// console.log(idDrink);
+	const { idDrink, strDrink, strDrinkThumb, strInstructions } = cocktail;
 	return (
 		<div className="col-md-11">
 			<div className="card box-shadow">

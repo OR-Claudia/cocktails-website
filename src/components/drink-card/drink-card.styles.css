@@ -1,0 +1,39 @@
+.drink-card-photo{
+    width:100%;
+    max-width: 60%;
+    min-width: 170px;
+    display: block;
+}
+
+.card{
+    display: flex;
+    align-content: space-around;
+}
+
+.drink-card-container{
+    margin: 50px;
+    align-content:flex-start;
+    display: flex;
+}
+
+.card-body{
+    margin: 20px;
+    height: 400px;
+    width: 100%;
+    display: flexbox;
+    padding:inherit;
+    flex: 1 1 auto;
+}
+
+.drink-instructions {
+    width: 80%;
+}
+
+.btn{
+    position: absolute;
+    bottom: 5%;
+}
+
+
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }

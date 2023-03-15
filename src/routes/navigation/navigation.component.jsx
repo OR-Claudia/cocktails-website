@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import DrinkAlbum from "../../components/drink-album/drink-album.component";
 
 const Navigation = () => {
 	const webTitle = "Cocktail database";
@@ -9,7 +8,6 @@ const Navigation = () => {
 				<div className="title-container">
 					<h1>{webTitle}</h1>
 				</div>
-				{/* <DrinkAlbum drinkList={drinks} /> */}
 			</div>
 			<Outlet />
 		</>

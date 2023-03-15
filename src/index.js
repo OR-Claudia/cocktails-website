@@ -5,13 +5,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { DrinksProvider } from "./contexts/drinks.context";
+import { CurrentDrinkProvider } from "./contexts/currentDrink.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<BrowserRouter>
 		<React.StrictMode>
 			<DrinksProvider>
-				<App />
+				<CurrentDrinkProvider>
+					<App />
+				</CurrentDrinkProvider>
 			</DrinksProvider>
 		</React.StrictMode>
 	</BrowserRouter>

@@ -24,7 +24,6 @@ export const DrinksProvider = ({ children }) => {
 		return fetchData();
 	});
 
-	console.log(drinks);
 	const value = { drinks };
 
 	return (

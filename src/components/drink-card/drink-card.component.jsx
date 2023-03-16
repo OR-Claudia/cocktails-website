@@ -24,6 +24,7 @@ const DrinkCard = ({ cocktail }) => {
 						alt={strDrink}
 						className="drink-card-photo"
 					/>
+					<br />
 					<p className="drink-instructions">
 						{strInstructions.length < 50
 							? `${strInstructions}`

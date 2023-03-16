@@ -1,0 +1,34 @@
+.cocktail-page-container{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+.card-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.cocktail-page-header{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.drink-image{
+    height: auto;
+    max-width: 300px;
+    border-radius: 25px;
+}
+
+p{
+    font-style: italic;
+}
+
+.ingredients-list{
+    display:contents;
+    list-style-type:none;
+    align-items:normal;
+}
+

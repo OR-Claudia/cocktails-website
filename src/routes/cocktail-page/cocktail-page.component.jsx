@@ -24,6 +24,8 @@ const getIngredients = (cocktail) => {
 const CocktailPage = () => {
 	const { currentDrink } = useContext(CurrentDrinkContext);
 
+	console.log(currentDrink);
+
 	const {
 		strDrink,
 		strAlcoholic,
@@ -35,9 +37,30 @@ const CocktailPage = () => {
 
 	const allIngredients = getIngredients(currentDrink);
 
+	console.log(allIngredients);
+
 	return (
-		<div className="cocktail-page-container">
-			<h2 className="cocktail-page-header">{strDrink}</h2>
+		<div className="cocktail-page-container jumbotron p-4 p-md-5 text-white rounded bg-dark">
+			<div className="card-container">
+				<h2 className="cocktail-page-header">{strDrink}</h2>
+				<br />
+				<img src={strDrinkThumb} alt={strDrink} className="drink-image" />
+				<div className="cocktail-information">
+					<br />
+					<p>Instructions</p>
+					<span>{strInstructions}</span>
+					<br />
+					<p>Ingredients</p>
+					{allIngredients.map((item, index) => {
+						return (
+							<li className="ingredients-list" key={index}>
+								{`${item.measurement} ${item.ingredient}`}
+							</li>
+						);
+					})}
+					<p>Type of glass</p>
+				</div>
+			</div>
 		</div>
 	);
 };

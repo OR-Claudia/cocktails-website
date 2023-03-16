@@ -47,18 +47,18 @@ const CocktailPage = () => {
 				<img src={strDrinkThumb} alt={strDrink} className="drink-image" />
 				<div className="cocktail-information">
 					<br />
-					<p>Instructions</p>
-					<span>{strInstructions}</span>
-					<br />
 					<p>Ingredients</p>
 					{allIngredients.map((item, index) => {
 						return (
 							<li className="ingredients-list" key={index}>
-								{`${item.measurement} ${item.ingredient}`}
+								{item.measurement ? item.measurement : ""} {item.ingredient}
 							</li>
 						);
 					})}
-					<p>Type of glass</p>
+					<br />
+					<p>Instructions</p>
+					<span>{strInstructions}</span>
+					<br />
 				</div>
 			</div>
 		</div>

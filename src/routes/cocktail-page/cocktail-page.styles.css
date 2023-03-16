@@ -8,7 +8,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 60%;
 }
 
 .cocktail-page-header{
@@ -24,10 +24,10 @@
 
 p{
     font-style: italic;
+    font-weight: 400;
 }
 
 .ingredients-list{
-    display:contents;
     list-style-type:none;
     align-items:normal;
 }
